@@ -95,7 +95,7 @@ class MicroExpressionEnvironment(gym.Env):
         if self.current_step >= self.max_steps:
             truncated = True
             # if truncated:
-            #     self._next_episode()
+            #     self._next_episode() //
         
         observation = self._read_frame()
         return observation, reward, terminated, truncated
